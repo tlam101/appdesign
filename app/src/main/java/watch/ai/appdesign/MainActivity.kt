@@ -3,6 +3,7 @@ package watch.ai.appdesign
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         confirm.setOnClickListener {
             val Intent = Intent(this, NewActivity1::class.java)
             startActivity(Intent)
+            Toast.makeText(this, "hello", Toast.LENGTH_LONG).show();
         }
 
     }
